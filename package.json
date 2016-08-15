@@ -1,0 +1,19 @@
+{
+  "name": "grunt-project",
+  "version": "1.0.0",
+  "description": "Sample project for grunt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammad Esfandiari",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0"
+  }
+}

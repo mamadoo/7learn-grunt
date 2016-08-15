@@ -4,7 +4,7 @@
   "description": "Sample project for grunt",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "grunt"
   },
   "author": "Mohammad Esfandiari",
   "license": "ISC",

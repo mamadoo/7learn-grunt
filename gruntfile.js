@@ -52,7 +52,7 @@ module.exports = function (grunt) {
 			},
 			all: {
 				files: {
-					'final/css/import.min.js': ['development/css/import.css']
+					'final/css/import.min.css': ['development/css/import.css']
 				}
 			}
 		},
@@ -81,6 +81,19 @@ module.exports = function (grunt) {
 					'final/css/less.css': 'development/less/style.less'
 				}
 			}
+		},
+
+		sass: {
+			dist: {
+				options: {
+	        sourcemap: 'none',
+	        style: 'compressed'
+	      },
+	      files: {
+	        'final/css/sass.css': 'development/sass/compile.sass',
+	        'final/css/scss.css': 'development/sass/compile.scss'
+	      }
+	    }
 		}
 	});
 
@@ -89,6 +102,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-coffee');
 	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
-	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less']);
+	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass']);
 };

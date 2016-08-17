@@ -15,6 +15,16 @@ or:
 grunt
 ~~~
 
+## Packages
+This repository use below grunt plugin:
+
+- [grunt-contrib-coffee](https://www.npmjs.com/package/grunt-contrib-coffee)
+- [grunt-contrib-concat](https://www.npmjs.com/package/grunt-contrib-concat)
+- [grunt-contrib-cssmin](https://www.npmjs.com/package/grunt-contrib-cssmin)
+- [grunt-contrib-less](https://www.npmjs.com/package/grunt-contrib-less)
+- [grunt-contrib-sass](https://www.npmjs.com/package/grunt-contrib-sass)
+- [grunt-contrib-uglify](https://www.npmjs.com/package/grunt-contrib-uglify)
+
 ## Contributors
 
 |[![Mohammad Esfandiari](https://avatars3.githubusercontent.com/u/6822354?v=3&s=140)](http://farsial.com)|

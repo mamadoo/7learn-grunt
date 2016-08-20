@@ -1,4 +1,4 @@
-/*! grunt-project - v1.0.0 - 2016-08-17 */
+/*! grunt-project - v1.1.0 - 2016-08-20 */
 
 // Hello world, I'm a comment!
 

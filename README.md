@@ -27,6 +27,7 @@ This repository use below grunt plugin:
 - [grunt-contrib-less](https://www.npmjs.com/package/grunt-contrib-less)
 - [grunt-contrib-sass](https://www.npmjs.com/package/grunt-contrib-sass)
 - [grunt-contrib-uglify](https://www.npmjs.com/package/grunt-contrib-uglify)
+- [grunt-contrib-pug](https://www.npmjs.com/package/grunt-contrib-pug)
 
 ## Contributors
 

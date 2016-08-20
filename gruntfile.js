@@ -94,6 +94,39 @@ module.exports = function (grunt) {
 	        'final/css/scss.css': 'development/sass/compile.scss'
 	      }
 	    }
+		},
+
+		pug: {
+			compile: {
+				options: {
+					data: {
+						debug: false
+					}
+				},
+				files: {
+					'final/html/template.html': ['development/pug/template.pug']
+				}
+			},
+			debug: {
+		    options: {
+		      data: {
+		        debug: true
+		      }
+		    },
+		    files: {
+		      'debug.html': 'development/pug/template.pug'
+		    }
+		  },
+		  release: {
+		    options: {
+		      data: {
+		        debug: false
+		      }
+		    },
+		    files: {
+		      'release.html': 'development/pug/template.pug'
+		    }
+		  }
 		}
 	});
 
@@ -103,6 +136,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-coffee');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-pug');
 
-	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass']);
+	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug']);
 };

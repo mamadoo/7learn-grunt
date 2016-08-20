@@ -114,7 +114,7 @@ module.exports = function (grunt) {
 		      }
 		    },
 		    files: {
-		      'debug.html': 'development/pug/template.pug'
+		      'final/html/debug.html': 'development/pug/template.pug'
 		    }
 		  },
 		  release: {
@@ -124,7 +124,7 @@ module.exports = function (grunt) {
 		      }
 		    },
 		    files: {
-		      'release.html': 'development/pug/template.pug'
+		      'final/html/release.html': 'development/pug/template.pug'
 		    }
 		  }
 		}

@@ -127,6 +127,15 @@ module.exports = function (grunt) {
 		      'final/html/release.html': 'development/pug/template.pug'
 		    }
 		  }
+		},
+
+		csslint: {
+			options: {
+				csslintrc: '.csslintrc'
+			},
+		  lint: {
+		    src: ['final/css/final.css']
+		  }
 		}
 	});
 
@@ -137,6 +146,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-pug');
+	grunt.loadNpmTasks('grunt-contrib-csslint');
 
-	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug']);
+	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint']);
 };

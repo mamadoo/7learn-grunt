@@ -136,6 +136,17 @@ module.exports = function (grunt) {
 		  lint: {
 		    src: ['final/css/final.css']
 		  }
+		},
+
+		jshint: {
+			options: {
+				reporter: require('jshint-stylish'),
+				force: true,
+				jshintrc: true
+			},
+			hint: {
+		    src: ['final/js/final.js']
+		  }
 		}
 	});
 
@@ -147,6 +158,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-pug');
 	grunt.loadNpmTasks('grunt-contrib-csslint');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint']);
 };

@@ -29,6 +29,7 @@ This repository use below grunt plugin:
 - [grunt-contrib-uglify](https://www.npmjs.com/package/grunt-contrib-uglify)
 - [grunt-contrib-pug](https://www.npmjs.com/package/grunt-contrib-pug)
 - [grunt-contrib-csslint](https://www.npmjs.com/package/grunt-contrib-csslint)
+- [grunt-contrib-jshint](https://www.npmjs.com/package/grunt-contrib-jshint)
 
 ## Contributors
 

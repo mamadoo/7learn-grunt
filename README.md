@@ -30,6 +30,7 @@ This repository use below grunt plugin:
 - [grunt-contrib-pug](https://www.npmjs.com/package/grunt-contrib-pug)
 - [grunt-contrib-csslint](https://www.npmjs.com/package/grunt-contrib-csslint)
 - [grunt-contrib-jshint](https://www.npmjs.com/package/grunt-contrib-jshint)
+- [time-grunt](https://www.npmjs.com/package/time-grunt)
 
 ## Contributors
 

@@ -1,0 +1,22 @@
+:-webkit-full-screen a {
+    display: flex
+}
+
+:-moz-full-screen a {
+    display: -moz-box;
+    display: flex
+}
+
+:fullscreen a {
+    display: -moz-box;
+    display: flex
+}
+
+a {
+    display: -moz-box;
+    display: flex;
+}
+
+a {
+    border-radius: 5px;
+}

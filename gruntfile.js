@@ -150,6 +150,17 @@ module.exports = function (grunt) {
 			hint: {
 		    src: ['final/js/final.js']
 		  }
+		},
+
+		autoprefixer: {
+			prefix: {
+				options: {
+					browsers: 'Firefox >= 20, last 2 Chrome versions, ie 8'
+				},
+				files: {
+					'final/css/prefix.css': 'development/css/prefix.css'
+				}
+			}
 		}
 	});
 
@@ -162,6 +173,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-pug');
 	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 
-	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint']);
+	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer']);
 };

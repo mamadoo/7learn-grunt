@@ -1,0 +1,12 @@
+:fullscreen a {
+    display: flex
+}
+
+a {
+    display: flex;
+}
+
+a {
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}

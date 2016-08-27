@@ -31,6 +31,7 @@ This repository use below grunt plugin:
 - [grunt-contrib-csslint](https://www.npmjs.com/package/grunt-contrib-csslint)
 - [grunt-contrib-jshint](https://www.npmjs.com/package/grunt-contrib-jshint)
 - [time-grunt](https://www.npmjs.com/package/time-grunt)
+- [grunt-autoprefixer](https://www.npmjs.com/package/grunt-autoprefixer)
 
 ## Contributors
 

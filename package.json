@@ -1,6 +1,6 @@
 {
   "name": "grunt-project",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Sample project for grunt",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
+    "grunt-newer": "^1.2.0",
     "jshint-stylish": "^2.2.1",
     "time-grunt": "^1.4.0"
   }

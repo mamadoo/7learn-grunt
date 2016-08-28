@@ -174,6 +174,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-newer');
 
 	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer']);
+	grunt.registerTask('lint', ['newer:csslint', 'newer:jshint']);
+	grunt.registerTask('minify', ['newer:uglify', 'newer:cssmin']);
 };

@@ -33,6 +33,7 @@ This repository use below grunt plugin:
 - [time-grunt](https://www.npmjs.com/package/time-grunt)
 - [grunt-autoprefixer](https://www.npmjs.com/package/grunt-autoprefixer)
 - [grunt-newer](https://www.npmjs.com/package/grunt-newer)
+- [grunt-concurrent](https://www.npmjs.com/package/grunt-concurrent)
 
 ## Contributors
 

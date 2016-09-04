@@ -34,6 +34,7 @@ This repository use below grunt plugin:
 - [grunt-autoprefixer](https://www.npmjs.com/package/grunt-autoprefixer)
 - [grunt-newer](https://www.npmjs.com/package/grunt-newer)
 - [grunt-concurrent](https://www.npmjs.com/package/grunt-concurrent)
+- [grunt-wiredep](https://www.npmjs.com/package/grunt-wiredep)
 
 ## Contributors
 

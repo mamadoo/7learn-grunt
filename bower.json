@@ -1,0 +1,22 @@
+{
+  "name": "grunt-project",
+  "description": "Sample project for grunt",
+  "main": "index.js",
+  "authors": [
+    "Mohammad Esfandiari"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mamadoo/7learn-grunt",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "animate.css": "^3.5.2"
+  }
+}

@@ -165,7 +165,13 @@ module.exports = function (grunt) {
 
 		concurrent: {
         target: ['sass', 'coffee']
-    }
+    },
+
+		wiredep: {
+			task: {
+				src: ['final/index.html']
+			}
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
@@ -180,6 +186,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-concurrent');
+	grunt.loadNpmTasks('grunt-wiredep');
 
 	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer']);
 	grunt.registerTask('lint', ['newer:csslint', 'newer:jshint']);

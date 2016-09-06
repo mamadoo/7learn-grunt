@@ -35,6 +35,7 @@ This repository use below grunt plugin:
 - [grunt-newer](https://www.npmjs.com/package/grunt-newer)
 - [grunt-concurrent](https://www.npmjs.com/package/grunt-concurrent)
 - [grunt-wiredep](https://www.npmjs.com/package/grunt-wiredep)
+- [grunt-responsive-images](https://www.npmjs.com/package/grunt-responsive-images)
 
 ## Contributors
 

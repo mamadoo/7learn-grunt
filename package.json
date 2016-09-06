@@ -1,6 +1,6 @@
 {
   "name": "grunt-project",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "Sample project for grunt",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "Mohammad Esfandiari",
   "license": "ISC",
+	"repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamadoo/7learn-grunt.git"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
@@ -22,6 +26,7 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-newer": "^1.2.0",
+    "grunt-responsive-images": "^0.1.9",
     "grunt-wiredep": "^3.0.1",
     "jshint-stylish": "^2.2.1",
     "time-grunt": "^1.4.0"

@@ -171,7 +171,30 @@ module.exports = function (grunt) {
 			task: {
 				src: ['final/index.html']
 			}
-		}
+		},
+
+		responsive_images: {
+			resize: {
+				options: {
+					sizes: [{
+					  name: "small",
+					  width: 240
+					},{
+					  name: "medium",
+					  width: 480,
+						quality: 60
+					},{
+					  name: "large",
+					  width: 720,
+						suffix: '_x2'
+					}]
+		    },
+		    files: {
+					'final/img/img1.jpg': 'development/img/img1.jpg',
+		      'final/img/img2.png': 'development/img/img2.png'
+		    }
+			}
+	  }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
@@ -187,6 +210,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-wiredep');
+	grunt.loadNpmTasks('grunt-responsive-images');
 
 	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer']);
 	grunt.registerTask('lint', ['newer:csslint', 'newer:jshint']);

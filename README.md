@@ -1,6 +1,6 @@
 # 7learn-grunt
 
-[![GitHub release](https://img.shields.io/github/release/mamadoo/7learn-grunt.svg?maxAge=2592000)](https://github.com/mamadoo/7learn-grunt/releases) [![license](https://img.shields.io/github/license/mamadoo/7learn-grunt.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
+[![GitHub release](https://img.shields.io/github/release/mamadoo/7learn-grunt.svg)](https://github.com/mamadoo/7learn-grunt/releases) [![license](https://img.shields.io/github/license/mamadoo/7learn-grunt.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
 
 Files and folder structure for Grunt 7learn course
 

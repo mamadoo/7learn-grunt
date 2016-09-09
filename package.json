@@ -1,6 +1,6 @@
 {
   "name": "grunt-project",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Sample project for grunt",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "author": "Mohammad Esfandiari",
   "license": "ISC",
-	"repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/mamadoo/7learn-grunt.git"
   },
@@ -16,6 +16,7 @@
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-coffee": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-csslint": "^1.0.0",

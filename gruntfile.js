@@ -194,7 +194,22 @@ module.exports = function (grunt) {
 		      'final/img/img2.png': 'development/img/img2.png'
 		    }
 			}
-	  }
+	  },
+
+		clean: {
+		  javascript: {
+				options: {
+					'no-write': true
+				},
+				src: ['development/toDelete/js']
+			},
+			stylesheet: {
+				options: {
+					'force': true
+				},
+				src: ['development/toDelete/css']
+			}
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
@@ -211,6 +226,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-wiredep');
 	grunt.loadNpmTasks('grunt-responsive-images');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 
 	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer']);
 	grunt.registerTask('lint', ['newer:csslint', 'newer:jshint']);

@@ -209,6 +209,17 @@ module.exports = function (grunt) {
 				},
 				src: ['development/toDelete/css']
 			}
+		},
+
+		copy: {
+			main: {
+				expand: true,
+				cwd: 'development/',
+				src: 'toCopy/**',
+				dest: 'final/pasted/',
+				filter: 'isFile',
+				flatten: true
+			}
 		}
 	});
 
@@ -227,6 +238,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-wiredep');
 	grunt.loadNpmTasks('grunt-responsive-images');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer']);
 	grunt.registerTask('lint', ['newer:csslint', 'newer:jshint']);

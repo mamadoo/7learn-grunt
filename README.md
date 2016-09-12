@@ -37,6 +37,7 @@ This repository use below grunt plugin:
 - [grunt-wiredep](https://www.npmjs.com/package/grunt-wiredep)
 - [grunt-responsive-images](https://www.npmjs.com/package/grunt-responsive-images)
 - [grunt-contrib-clean](https://www.npmjs.com/package/grunt-contrib-clean)
+- [grunt-contrib-copy](https://www.npmjs.com/package/grunt-contrib-copy)
 
 ## Contributors
 

@@ -220,6 +220,20 @@ module.exports = function (grunt) {
 				filter: 'isFile',
 				flatten: true
 			}
+		},
+
+		watch: {
+		  scripts: {
+		    files: ['development/js/*.js'],
+		    tasks: ['uglify:all']
+		  },
+			coffeescript: {
+				files: ['development/coffee/*.coffee'],
+		    tasks: ['coffee'],
+		    options: {
+		      spawn: false
+		    }
+			}
 		}
 	});
 
@@ -239,8 +253,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-responsive-images');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer']);
+	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer', 'watch']);
 	grunt.registerTask('lint', ['newer:csslint', 'newer:jshint']);
 	grunt.registerTask('minify', ['newer:uglify', 'newer:cssmin']);
 	grunt.registerTask('non-concurrent', ['sass', 'coffee']);

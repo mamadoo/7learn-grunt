@@ -38,6 +38,7 @@ This repository use below grunt plugin:
 - [grunt-responsive-images](https://www.npmjs.com/package/grunt-responsive-images)
 - [grunt-contrib-clean](https://www.npmjs.com/package/grunt-contrib-clean)
 - [grunt-contrib-copy](https://www.npmjs.com/package/grunt-contrib-copy)
+- [grunt-contrib-watch](https://www.npmjs.com/package/grunt-contrib-watch)
 
 ## Contributors
 

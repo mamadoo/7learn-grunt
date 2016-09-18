@@ -223,6 +223,9 @@ module.exports = function (grunt) {
 		},
 
 		watch: {
+			options: {
+				livereload: true
+			},
 		  scripts: {
 		    files: ['development/js/*.js'],
 		    tasks: ['uglify:all']
@@ -233,6 +236,28 @@ module.exports = function (grunt) {
 		    options: {
 		      spawn: false
 		    }
+			},
+			cssmin: {
+				files: ['development/css/*.css'],
+		    tasks: ['cssmin']
+			},
+			html: {
+				options: {
+					reload: true
+				},
+				files: ['final/index.html'],
+				tasks: ['wiredep']
+			}
+		},
+
+		connect: {
+			server: {
+				options: {
+					hostname: 'localhost',
+					port: 3000,
+					base: '.',
+					livereload: true
+				}
 			}
 		}
 	});
@@ -254,8 +279,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 
-	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer', 'watch']);
+	grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'coffee', 'less', 'sass', 'pug', 'csslint', 'autoprefixer', 'connect', 'watch']);
 	grunt.registerTask('lint', ['newer:csslint', 'newer:jshint']);
 	grunt.registerTask('minify', ['newer:uglify', 'newer:cssmin']);
 	grunt.registerTask('non-concurrent', ['sass', 'coffee']);

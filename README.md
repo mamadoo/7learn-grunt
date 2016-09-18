@@ -39,6 +39,7 @@ This repository use below grunt plugin:
 - [grunt-contrib-clean](https://www.npmjs.com/package/grunt-contrib-clean)
 - [grunt-contrib-copy](https://www.npmjs.com/package/grunt-contrib-copy)
 - [grunt-contrib-watch](https://www.npmjs.com/package/grunt-contrib-watch)
+- [grunt-contrib-connect](https://www.npmjs.com/package/grunt-contrib-connect)
 
 ## Contributors
 
